@@ -1,0 +1,23 @@
+---
+title: "Introduction to the FARS Package"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to the FARS Package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+library(farsPackage)
+```
+Overview
+The farsPackage provides a set of functions to read, process, and visualize data from the Fatality Analysis Reporting System (FARS). This package is useful for analyzing traffic accident data across different years and states.
+
+Reading FARS Data
+Use fars_read() to read a FARS CSV file:
+
+```{r}
+
+fars_read("accident_2013.csv.bz2") # Uncomment if file is available
+```
